@@ -67,11 +67,11 @@ Merges select request metadata fields (e.g., `Tid`, `Did`, `Fid`, timestamps, ve
 ├── PythonModelExecutor.py                -- main python file
 
 ```
+
 ## --- STEPS TO RUN THE SOLUTION USING COPILOT ---
 
-### Step 1: Open project repository in visual studio code
-     
-      Open visual studio code and open the project folder
+### Step 1: Open project repository in same visual studio where copilot is running
+      
 
 ### Step 2: Download Model Weights
 
@@ -83,39 +83,28 @@ Merges select request metadata fields (e.g., `Tid`, `Did`, `Fid`, timestamps, ve
 
       Open mil_config.json and update the file path of the model weights under the LicensePlateDetection section.
 
-### Step 4: open copilot chat and provide the prompt 
 
-      ```
-      I want you to go through all the commands mentioned in the readme file under  ## --- STEPS TO RUN THE SOLUTION USING COPILOT  --- in step 5: Commands to RUN and run them in new terminal at the repository location one by one.
-      ```
-
-### Step 5: Commands to RUN ( Automatically ran by the copilot)
-      - cd py
-      - py -3.10 -m venv .venv
-      - cd .venv\Scripts
-      - .\activate
-      - cd ../../
-      - pip install uv
+### Step 4: Commands to RUN (Run each command one after the other)
+      - cd py     // go inside the py folder of the project repository
       - uv sync
       - cd ../
       - python PythonModelExecutor.py
 
 
-### Step 6: Open Swagger UI
+### Step 5: Open Swagger UI
 
-      Once the service starts, open Swagger in your browser:
+      Once the service starts, open Swagger in the browser:
       ```
       http://localhost:8448/docs
       ```
 
-### Step 7: Test with Example Data
+### Step 6: Test with Example Data
       
       Use the sample input provided in the SampleInputOutput folder.
 
-### Step 8: Verify Output
+### Step 7: Verify Output
 
       Compare the output from Swagger with the sample output to confirm the model is working correctly.
-
 
 
 ##  --- STEPS TO USE THE SOLUTION IN MANUAL WAY---
