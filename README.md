@@ -67,6 +67,9 @@ Merges select request metadata fields (e.g., `Tid`, `Did`, `Fid`, timestamps, ve
 ├── PythonModelExecutor.py                -- main python file
 
 ```
+## Prompt to provide to copilot  ##
+   Can you please clone the github repo - https://github.com/savsani123/LicensePlateDetection.git 
+After git clone is successful , I want you to read the README.MD file and follow each  steps mentioned under ## --- STEPS TO RUN THE SOLUTION USING COPILOT --- one after the other.
 
 ## --- STEPS TO RUN THE SOLUTION USING COPILOT ---
 
