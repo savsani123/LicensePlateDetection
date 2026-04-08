@@ -1,0 +1,25 @@
+{
+  "ModelExecutor": {
+    "model_name": "LicensePlateDetection",
+    "model_loader_file": "default"
+  },
+  "ModelLoader": {
+    "file_location":".",
+    "is_class":"Yes",
+    "class_name": "LicensePlateDetection",
+    "first_method_to_call_in_class":"predict_request"
+  },
+  "FastAPI" :
+  {
+    "host" : "0.0.0.0",
+    "port" : 8448,
+    "endpoint": "/LicensePlateDetection"
+  },"LicensePlateDetection" :
+  {
+  "wpod_net" : "model_weights/wpod-net.json",
+  "wpod_net_weight" : "model_weights/wpod-net.h5",
+  "MobileNets_character_recognition" : "model_weights/MobileNets_character_recognition.json",
+  "License_character_recognition_weight" : "model_weights/License_character_recognition_weight.h5",
+  "license_character_classes" : "model_weights/license_character_classes.npy"
+  }
+}

@@ -1,0 +1,40 @@
+
+[project]
+name = "LicensePlate"
+version = "0.1.0"
+requires-python = "==3.10"
+dependencies = [
+    "numpy",
+    "tensorflow",
+    "ml-dtypes",
+    "opencv-python",
+    "pillow",
+    "pyfiglet",
+    "python-multipart",
+    "bcrypt",
+    "cryptography",
+    "fastapi",
+    "pydantic",
+    "PyJWT",
+    "python-jose",
+    "starlette",
+    "uvicorn",
+    "passlib",
+    "scikit-learn",
+    "tf-keras",
+    "uv",
+    "licenseplatedetectioninference",
+]
+
+[tool.uv]
+required-environments = [
+  "sys_platform == 'win32' and platform_machine == 'AMD64'"
+]
+
+[tool.uv.sources]
+licenseplatedetectioninference = { path = "LicensePlateDetectionInference-0.0.1-py3-none-any.whl" }
+
+[build-system]
+requires = ["setuptools>=68", "wheel"] 
+build-backend = "setuptools.build_meta"
+ 
