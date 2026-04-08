@@ -70,7 +70,7 @@ Merges select request metadata fields (e.g., `Tid`, `Did`, `Fid`, timestamps, ve
 
 ## --- STEPS TO RUN THE SOLUTION USING COPILOT ---
 
-### Step 1: Open project repository in same visual studio where copilot is running
+### Step 1: Open project repository in same visual studio instance where copilot is running currently
       
 
 ### Step 2: Download Model Weights
@@ -107,6 +107,8 @@ Merges select request metadata fields (e.g., `Tid`, `Did`, `Fid`, timestamps, ve
 ### Step 7: Verify Output
 
       Compare the output from Swagger with the sample output to confirm the model is working correctly.
+
+### Step 8: Provide summary of what steps you followed, what was the outcome and if any issues faced.
 
 
 ##  --- STEPS TO USE THE SOLUTION IN MANUAL WAY---
