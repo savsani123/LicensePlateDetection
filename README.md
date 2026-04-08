@@ -87,7 +87,9 @@ Merges select request metadata fields (e.g., `Tid`, `Did`, `Fid`, timestamps, ve
 ### Step 4: Commands to RUN (Run each command one after the other)
       - cd py     // go inside the py folder of the project repository
       - uv sync
-      - cd ../
+      - cd .venv\Scripts
+      - activate
+      - cd ../../../
       - python PythonModelExecutor.py
 
 
